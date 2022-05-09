@@ -85,27 +85,7 @@ function Content(props) {
         Education,
         Projects
     ]
-    const renderContent = (sec) =>{
-        if (sec.sectionDescription.length === 1 ){
-            sec.sectionDescription.map((desc)=>{
-                return(
-                    <li style={{marginBottom:'10px'}}>
-                        <h3>{desc.split('\n').map(str => <p style={{marginBottom:'0'}}>{str}</p>)}</h3>
-                    </li>
-                )
-            })
-        }
-        else {
-            sec.sectionDescription.map((desc)=>{
-                return(
-                    <li style={{marginBottom:'10px'}}>
-                        <h3>{desc.split('\n').map(str => <p style={{marginBottom:'0'}}>{str}</p>)}</h3>
-                    </li>
-                )
-            })
-        }
 
-    }
     return (
             <div style={{display:'flex',justifyContent:'space-between'}}>
                 <div style={{margin:'auto'}}>
@@ -129,13 +109,20 @@ function Content(props) {
                                         <h2>{sec?.sectionTime}</h2>
                                         <ul>
                                             {
+                                                sec.sectionDescription.length > 1 ?
                                                 sec.sectionDescription.map((desc)=>{
                                                     return(
                                                         <li style={{marginBottom:'10px'}}>
                                                             <h3>{desc.split('\n').map(str => <p style={{marginBottom:'0'}}>{str}</p>)}</h3>
                                                         </li>
                                                     )
-                                                })
+                                                }):sec.sectionDescription.map((desc)=>{
+                                                        return(
+                                                            <div style={{marginBottom:'10px'}}>
+                                                                <h3>{desc.split('\n').map(str => <p style={{marginBottom:'0'}}>{str}</p>)}</h3>
+                                                            </div>
+                                                        )
+                                                    })
                                             }
                                         </ul>
                                     </div>

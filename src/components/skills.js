@@ -13,7 +13,7 @@ function Skills() {
         {skill:'SQL',colors:'purple',level:""},
         {skill:'Object-Oriented',colors:'pink',level:""},
         {skill:'OPP',colors:'brown',level:""},
-        {skill:'Data Structures',colors:'brown',level:""},
+        {skill:'Data Structures',colors:'pink',level:""},
         {skill:'Hebrew',colors:'grey',level:"Native"},
         {skill:'English',colors:'blue',level:"Advanced"},
         {skill:'TDD',colors:'olive',level:""},

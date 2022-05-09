@@ -4,7 +4,6 @@ import Line from "./line";
 function ContactMe() {
     const [firstName,setFirstName] = useState(0)
     const [lastName,setLastName] = useState(0)
-    const [email,setEmail] = useState(0)
     const [subject,setSubject] = useState(0)
     const [massage,setMessage] = useState(0)
     const Mailto = ({ email, subject, body, ...props }) => {
@@ -16,15 +15,14 @@ function ContactMe() {
         );
     }
     return (
-        <div>
+        <div style={{}}>
             <h1>CONTACT ME</h1>
             <Line/>
-            <Form unstackable>
+            <Form>
                 <Form.Group widths={2}>
                     <Form.Input label='First name' placeholder='First name' onChange={(e)=>setFirstName(e.target.value)} />
                     <Form.Input label='Last name' placeholder='Last name' onChange={(e)=>setLastName(e.target.value)} />
                 </Form.Group>
-                {/*<Form.Input label='Email' placeholder='Email' onChange={(e)=>setEmail(e.target.value)}/>*/}
                 <Form.Input label='Subject' placeholder='Subject' onChange={(e)=>setSubject(e.target.value)}/>
                 <label>Message</label>
                 <TextArea placeholder='Message' onChange={(e)=>setMessage(e.target.value)}/>
