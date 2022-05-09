@@ -5,7 +5,7 @@ function Footer() {
     return (
         <div style={{backgroundColor:'teal',display:"flex",flexDirection:"row",justifyContent:"space-around",marginTop:'2%'}}>
             <div style={{marginBottom:"2%", marginTop:"2%"}}>
-                {/*<Button href={file} download>DOWNLOAD FULL RESUME</Button>*/}
+                <Button download>DOWNLOAD FULL RESUME</Button>
             </div>
             <div style={{marginLeft:'5%',marginBottom:"2%", marginTop:"2%"}}>
                 <div style={{display:'flex',justifyContent:"center"}}>

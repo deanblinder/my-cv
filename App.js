@@ -57,7 +57,7 @@ function App() {
     <div className='app' style={{backgroundImage:`url(${back})` }}>
         <Image style={{width:'100%'}} src={coverPhoto}/>
         <div style={{marginBottom:"2%", marginTop:"2%",marginLeft:"10%",top:0}}>
-            {/*<Button color='red' href={file} download>DOWNLOAD FULL RESUME</Button>*/}
+            <Button color='red' download>DOWNLOAD FULL RESUME</Button>
         </div>
         <div>
             {renderProfilePicAndName()}
