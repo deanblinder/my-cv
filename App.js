@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import React,{useState} from "react";
 import {Button, Icon, Image} from "semantic-ui-react";
 import ContactMe from "./src/components/contactMe";
@@ -6,7 +5,7 @@ import QuickId from "./src/components/quickId";
 import Content from "./src/components/content";
 import Skills from "./src/components/skills";
 import Footer from "./src/components/footer";
-import file from "./src/assets/Electric Muscle Stimulation - EMS .pdf";
+// import file from "./src/assets/Electric Muscle Stimulation - EMS .pdf";
 
 const coverPhoto = require('./src/assets/cover2.jpeg')
 const profilePic = require('./src/assets/profilePic.jpeg')
@@ -58,7 +57,7 @@ function App() {
     <div className='app' style={{backgroundImage:`url(${back})` }}>
         <Image style={{width:'100%'}} src={coverPhoto}/>
         <div style={{marginBottom:"2%", marginTop:"2%",marginLeft:"10%",top:0}}>
-            <Button color='red' href={file} download>DOWNLOAD FULL RESUME</Button>
+            {/*<Button color='red' href={file} download>DOWNLOAD FULL RESUME</Button>*/}
         </div>
         <div>
             {renderProfilePicAndName()}

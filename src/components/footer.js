@@ -1,11 +1,11 @@
 import React,{useState} from "react";
 import {Form, Icon, TextArea,Segment,Button} from "semantic-ui-react";
-const file =  require('../assets/Electric Muscle Stimulation - EMS .pdf')
+// const file =  require('../assets/Electric Muscle Stimulation - EMS .pdf')
 function Footer() {
     return (
         <div style={{backgroundColor:'teal',display:"flex",flexDirection:"row",justifyContent:"space-around",marginTop:'2%'}}>
             <div style={{marginBottom:"2%", marginTop:"2%"}}>
-                <Button href={file} download>DOWNLOAD FULL RESUME</Button>
+                {/*<Button href={file} download>DOWNLOAD FULL RESUME</Button>*/}
             </div>
             <div style={{marginLeft:'5%',marginBottom:"2%", marginTop:"2%"}}>
                 <div style={{display:'flex',justifyContent:"center"}}>

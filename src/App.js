@@ -5,7 +5,7 @@ import QuickId from "./components/quickId";
 import Content from "./components/content";
 import Skills from "./components/skills";
 import Footer from "./components/footer";
-import file from "./assets/Electric Muscle Stimulation - EMS .pdf";
+// import file from "./assets/Electric Muscle Stimulation - EMS .pdf";
 
 const coverPhoto = require('./assets/cover2.jpeg')
 const profilePic = require('./assets/profilePic.jpeg')
@@ -57,7 +57,7 @@ function App() {
       <div className='app' style={{backgroundImage:`url(${back})` }}>
         <Image style={{width:'100%'}} src={coverPhoto}/>
         <div style={{marginBottom:"2%", marginTop:"2%",marginLeft:"10%",top:0}}>
-          <Button color='red' href={file} download>DOWNLOAD FULL RESUME</Button>
+          {/*<Button color='red' href={file} download>DOWNLOAD FULL RESUME</Button>*/}
         </div>
         <div>
           {renderProfilePicAndName()}
