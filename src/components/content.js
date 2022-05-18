@@ -12,7 +12,7 @@ function Content(props) {
                     'Developing the "Owner App by Wix" with React Native and TypeScript, an application that serves more than 1 Million users around the world.',
                     'Working close to the product manager and the UX designer and back-end engineers.',
                     'Write scalable code using best practices and principles.',
-                    'work as a part of a team and independently and also with other teams around the world. '
+                    'Work as a part of a team and independently and also with other teams around the world. '
                 ]
             },
             {
@@ -75,14 +75,14 @@ function Content(props) {
             {
                 sectionDescription:[
                     'Software and Information Engineering graduate at Ben Gurion University. ' +
-                    'work experience at Wix.com company as a Mobile Developer (React Native and TypeScript). '
+                    'Work experience at Wix.com company as a Mobile Developer (React Native and TypeScript). '
                 ]
             },
             {
                 sectionDescription:[
                     'Working closely with the product manager and UX designer. ' +
-                    'experience in-site and off-site communication, good team player, and independent. ' +
-                    'looking for my next challenge after an internship at Wix.com.'
+                    'Wxperience in-site and off-site communication, good team player, and independent. ' +
+                    'Looking for my next challenge after an internship at Wix.com.'
                 ]
             },
         ]
