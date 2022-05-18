@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React from "react";
 import {Icon} from "semantic-ui-react";
 import Line from "./line";
 function Content(props) {
@@ -9,9 +9,9 @@ function Content(props) {
                 sectionTitle:'Mobile Developer at Wix.com',
                 sectionTime:'july 2021 - now',
                 sectionDescription:[
-                    'Developing the Owner App by Wix with React Native and TypeScript, an application that serves more than 1 Million users around the world.',
+                    'Developing the "Owner App by Wix" with React Native and TypeScript, an application that serves more than 1 Million users around the world.',
                     'Working close to the product manager and the UX designer and back-end engineers.',
-                    'Write scalable code with best practices principles code.',
+                    'Write scalable code using best practices and principles.',
                     'work as a part of a team and independently and also with other teams around the world. '
                 ]
             },
@@ -19,7 +19,7 @@ function Content(props) {
                 sectionTitle:'IT, Recruiting Station, IDF',
                 sectionTime:'july 2010 - july 2013',
                 sectionDescription:[
-                    'Inspected and upgraded users computer networking systems; updated software and replaced outdated hardware, including desktop PCs, laptops, routers, and ethernet cables.',
+                    'Inspected and upgraded users computer networking systems updated software and replaced outdated hardware, including desktop PCs, laptops, routers, and ethernet cables.',
                     'Graduating SAP implementation course and implementing it in the base.',
                     'Instructed new software features for system users.'
                 ]
@@ -32,8 +32,15 @@ function Content(props) {
             {
                 sectionTitle:'React.js Application',
                 sectionDescription:[
-                    'An application targeted at assisting users during the pandemic.\n People can upload a grocery list request.\n Anyone who wishes to assist can view the requests on the map with details and contact the requester directly through WhatsApp and Facebook using google maps API, react.js, and rebase.'
-                ]
+                    'An application targeted at assisting users during the pandemic.' +
+                    '\n People can upload a grocery list request.' +
+                    '\n Anyone who wishes to assist can view the requests on the map with details and contact the requester directly through WhatsApp and Facebook using google maps API, react.js, and Firebase.'
+                ],
+                links: {
+                        video:'https://www.linkedin.com/posts/dean-blinder-1276a31a9_reactjs-firebase-ugcPost-6726485485578989568-QxBB/',
+                        git:'https://github.com/deanblinder/buyTheWay'
+                    }
+
             },
             {
                 sectionTitle:'React Native hitchhiking Mobile App',
@@ -68,13 +75,14 @@ function Content(props) {
             {
                 sectionDescription:[
                     'Software and Information Engineering graduate at Ben Gurion University. ' +
-                    'work experience at Wix.com as a Mobile Developer (React Native and TypeScript).'
+                    'work experience at Wix.com company as a Mobile Developer (React Native and TypeScript). '
                 ]
             },
             {
                 sectionDescription:[
-                    'working closely with the product manager and UX, experience in-site and off-site communication, ' +
-                    'good team player and independent, looking for my next challenge after an internship at Wix.com'
+                    'Working closely with the product manager and UX designer. ' +
+                    'experience in-site and off-site communication, good team player, and independent. ' +
+                    'looking for my next challenge after an internship at Wix.com.'
                 ]
             },
         ]
@@ -124,6 +132,8 @@ function Content(props) {
                                                         )
                                                     })
                                             }
+                                            {sec.links ? <Icon name='github' size='big' link onClick={()=> window.open(sec.links.git)}/> : undefined}
+                                            {/*<a href={sec.links.git}>gitHub link</a>*/}
                                         </ul>
                                     </div>
                                 )
