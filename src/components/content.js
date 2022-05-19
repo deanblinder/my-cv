@@ -45,7 +45,7 @@ function Content(props) {
             {
                 sectionTitle:'React Native hitchhiking Mobile App',
                 sectionDescription:[
-                    'in progress developing Mobile App, anyone can request a ride from anywhere to anywhere.'
+                    'In progress developing Mobile App, anyone can request a ride from anywhere to anywhere.'
                 ]
             }
         ]
