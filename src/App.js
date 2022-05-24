@@ -1,11 +1,12 @@
 import React, {useState} from "react";
-import {Button, Icon, Image} from "semantic-ui-react";
+import {Button, Icon, Image, Message} from "semantic-ui-react";
 import ContactMe from "./components/contactMe";
 import QuickId from "./components/quickId";
 import Content from "./components/content";
 import Skills from "./components/skills";
 import Footer from "./components/footer";
 import file from "./assets/CV_dean_blinder.pdf";
+import {isMobile} from 'react-device-detect';
 
 const coverPhoto = require('./assets/cover2.jpeg')
 const profilePic = require('./assets/profilePic.jpeg')
@@ -53,20 +54,38 @@ function App() {
         </div>
     )
   }
+  const renderContentIfDesktop = () =>{
+      if (isMobile){
+          return(
+              <div style={{display:"flex",justifyContent:'center',marginTop:'10%'}}>
+                  <Message negative>
+                      <Message.Header>Sorry, content available only on desktop<Icon name='smile'/></Message.Header>
+                  </Message>
+              </div>
+          )
+      }else{
+          return (
+              <div className='app' style={{backgroundImage:`url(${back})` }}>
+                  <Image style={{width:'100%'}} src={coverPhoto}/>
+                  <div style={{marginBottom:"2%", marginTop:"2%",marginLeft:"10%",top:0}}>
+                      <Button color='red' download href={file}>DOWNLOAD FULL RESUME</Button>
+                  </div>
+                  <div>
+                      {renderProfilePicAndName()}
+                      {renderContentAndArrows()}
+                      <Skills/>
+                      {renderQuickIdAndConectMe()}
+                  </div>
+                  <Footer/>
+                  <div/>
+              </div>
+          )
+      }
+
+  }
   return (
-      <div className='app' style={{backgroundImage:`url(${back})` }}>
-        <Image style={{width:'100%'}} src={coverPhoto}/>
-        <div style={{marginBottom:"2%", marginTop:"2%",marginLeft:"10%",top:0}}>
-          <Button color='red' download href={file}>DOWNLOAD FULL RESUME</Button>
-        </div>
-        <div>
-          {renderProfilePicAndName()}
-          {renderContentAndArrows()}
-          <Skills/>
-          {renderQuickIdAndConectMe()}
-        </div>
-        <Footer/>
-        <div/>
+      <div>
+          {renderContentIfDesktop()}
       </div>
   );
 }
