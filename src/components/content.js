@@ -55,9 +55,9 @@ function Content(props) {
         section:[
             {
                 sectionTitle:'Bachelor of Science.\nSoftware And Information Systems Engineering,\n Ben Gurion University',
-                sectionTime:'july 2017 - now',
+                sectionTime:'2017 - 2022',
                 sectionDescription:[
-                    'Expected graduation: July 2022'
+
                 ]
             },
             {
@@ -81,8 +81,7 @@ function Content(props) {
             {
                 sectionDescription:[
                     'Working closely with the product manager and UX designer. ' +
-                    'Wxperience in-site and off-site communication, good team player, and independent. ' +
-                    'Looking for my next challenge after an internship at Wix.com.'
+                    'Wxperience in-site and off-site communication, good team player, and independent.'
                 ]
             },
         ]
